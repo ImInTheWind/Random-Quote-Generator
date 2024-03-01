@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="content">
+      <div id="spacer"></div>
+      <div id="prompt">
+        Need inspiration?<br />
+        Press this button for some support
+      </div>
+      <button
+        id="button"
+        type="button"
+        class="btn btn-default btn-lg"
+        data-toggle="modal"
+        data-target="#quoteModal"
+      >
+        Get Quote
+      </button>
+    </div>
+
+    <div id="quoteModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 id="quoteAuthor" class="modal-title">quote author</h4>
+          </div>
+          <div id="quoteContent" class="modal-body">
+            <p>quote body</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="index.js"></script>
+  </footer>
+</html>
