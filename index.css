@@ -1,26 +1,53 @@
+body {
+    overflow: hidden;
+}
 #content {
     border: solid black 1px;
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 #prompt {
-    border: solid red 1px;
+    display: flex;
+
     width: 100%;
-    height: 20%;
+    height: 40%;
+    justify-content: center;
     text-align: center;
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
     align-items: flex-end;
-}
-#spacer {
-    border: dotted blue 1px;
-    height: 20%;
+    color: black;
 }
 #button {
-    border: solid black 1px;
+    border: solid black 2px;
     width: 50%;
     height: 10%;
     margin-left: 25%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
+    margin-top: 5%;
+    background-color: rgb(82, 236, 236);
+}
+#box {
+    border: solid black 2px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: rgb(82, 236, 236);;
+}
+#rosaParks {
+    position: absolute;
+    bottom: 0px;
+    right: -100px;
+    width: 30%;
+    height: 50%;
+}
+#albertEinstein {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 20%;
+    height: 55%;
 }
